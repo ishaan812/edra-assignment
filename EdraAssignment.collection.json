@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "a518f7f0-21d3-4282-a7f8-90ac1d62f3ea",
+		"name": "Edra Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19841716"
+	},
+	"item": [
+		{
+			"name": "Generate Keys",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/keys",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"keys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Key",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/keys",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"keys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Key By ID",
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/keys/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"keys",
+						":id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": null,
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "c8916189-f5e0-4b22-9ddb-fd2d3e95ebe6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unblock Key",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/keys/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"keys",
+						":id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": null,
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "47a13c9e-477d-4811-a543-7d17400533f5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Key",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/keys/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"keys",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1c734bf3-ed05-4a8e-8a28-2d721ec5fcbc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "keeep alive",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/keepalive/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"keepalive",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "100caefd-2a0e-4dad-b0d1-ddafb8aa5a46"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
